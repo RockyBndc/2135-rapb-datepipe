@@ -1,0 +1,116 @@
+<section class="datePipe">
+  <div class="container col-10">
+    <br />
+    <h2 class="text-center">PREDEFINED DATE FORMATS</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Date Format</th>
+          <th scope="col">Datepipe Code</th>
+          <th scope="col">Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>M/d/yy, h:mm a</td>
+          <td>short</td>
+          <td>{{ presentDate | date: 'short' }}</td>
+        </tr>
+        <tr>
+          <td>MMM d, y, h:mm:ss a</td>
+          <td>medium</td>
+          <td>{{ presentDate | date: 'medium' }}</td>
+        </tr>
+        <tr>
+          <td>MMMM d, y, h:mm:ss a z</td>
+          <td>long</td>
+          <td>{{ presentDate | date: 'long' }}</td>
+        </tr>
+        <tr>
+          <td>EEEE, MMMM d, y, h:mm:ss a zzzz</td>
+          <td>full</td>
+          <td>{{ presentDate | date: 'full' }}</td>
+        </tr>
+        <tr>
+          <td>M/d/yy</td>
+          <td>shortDate</td>
+          <td>{{ presentDate | date: 'shortDate' }}</td>
+        </tr>
+        <tr>
+          <td>MMM d, y</td>
+          <td>mediumDate</td>
+          <td>{{ presentDate | date: 'mediumDate' }}</td>
+        </tr>
+        <tr>
+          <td>MMMM d, y</td>
+          <td>longDate</td>
+          <td>{{ presentDate | date: 'longDate' }}</td>
+        </tr>
+        <tr>
+          <td>EEEE, MMMM d, y</td>
+          <td>fullDate</td>
+          <td>{{ presentDate | date: 'fullDate' }}</td>
+        </tr>
+        <tr>
+          <td>h:mm a</td>
+          <td>shortTime</td>
+          <td>{{ presentDate | date: 'shortTime' }}</td>
+        </tr>
+        <tr>
+          <td>h:mm:ss a</td>
+          <td>mediumTime</td>
+          <td>{{ presentDate | date: 'mediumTime' }}</td>
+        </tr>
+        <tr>
+          <td>h:mm:ss a z</td>
+          <td>longTime</td>
+          <td>{{ presentDate | date: 'longTime' }}</td>
+        </tr>
+        <tr>
+          <td>h:mm:ss a zzzz</td>
+          <td>fullTime</td>
+          <td>{{ presentDate | date: 'fullTime' }}</td>
+        </tr>
+        <tr>
+          <td>h:mm:ss a zzzz</td>
+          <td>fullTime</td>
+          <td>{{ presentDate | date: 'fullTime' }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br /><br />
+
+    <h2 class="text-center">CUSTOM DATE</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Date Format</th>
+          <th scope="col">Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>dd MMM yyyy</td>
+          <td>{{ presentDate | date: 'dd MMM yyyy' }}</td>
+        </tr>
+        <tr>
+          <td>MM/dd/yyyy</td>
+          <td>{{ presentDate | date: 'MM/dd/yyyy' }}</td>
+        </tr>
+        <tr>
+          <td>HH:mm:ss</td>
+          <td>{{ presentDate | date: 'HH:mm:ss' }}</td>
+        </tr>
+        <tr>
+          <td>dd/MM/yyyy HH:mm:ss</td>
+          <td>{{ presentDate | date: 'dd/MM/yyyy HH:mm:ss' }}</td>
+        </tr>
+        <tr>
+          <td>EEEE d MMMM y GGGG</td>
+          <td>{{ presentDate | date: 'EEEE d MMMM y GGGG' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
